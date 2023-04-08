@@ -1,1 +1,2 @@
-# Two-Layer-Net-Classifier
+# TwoLayerNet Classifier
+
