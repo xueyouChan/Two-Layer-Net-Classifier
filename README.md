@@ -3,9 +3,16 @@
 代码总共有两部分，一个是MNIST数据集的导入，是mnist.py，另一个是主代码文件Model.py。
 
 <p>代码的运行主要是Model.py文件，在运行前需要注意这几个部分要把路径设置为自己的路径</p>
-<pre><code>sys.path.append('Add Your Path')  # 代码第六段
+<pre><code>
+
+# Model.py
+
+sys.path.append('Add Your Path')  # 代码第六段
 net.save_model("Add Your Path") # train_test函数最后一行
 net.load_model('Add Your Path') # __main__部分
+# mnist.py
+
+dataset_dir = "Your PATH HERE"
 </code></pre>
 
 关于参数查找：</br>
