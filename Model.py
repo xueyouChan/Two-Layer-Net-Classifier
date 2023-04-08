@@ -100,7 +100,7 @@ def train_test(epoch,batch_size,lr,net,lr_decay_rate=0.99,task='para_find'):
             acc_e.append(calc_acc(out,y))
             net.backpropagation(X,out,y,'l2')
             net.step()
-        if e//20 == 0 and e > 0:
+        if e%20 == 0 and e > 0:
             lr*=lr_decay_rate 
         
         train_loss.append(np.mean(loss_e))
