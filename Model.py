@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  5 22:42:08 2023
 
-@author: Lenovo
-"""
 
 import sys
 import random
 import numpy as np
 from mnist import load_mnist
 import matplotlib.pyplot as plt
-sys.path.append('C:/Users/Lenovo/研一下/深度学习')  
+sys.path.append('Your path here')  
 class TwoLayerNet(object):
     def __init__(self,input_size,hidden_size,output_size,weight_init_std,types,lr=1e-3,reg=0.1):
         self.lr=lr
@@ -125,7 +121,7 @@ def train_test(epoch,batch_size,lr,net,lr_decay_rate=0.99,task='para_find'):
         
     elif task == 'para_find':
         return train_loss, train_acc, test_loss, test_acc, net.params
-        net.save_model("C:/Users/Lenovo/Desktop/资料/研一下/深度学习/HW1/model.npy")
+        net.save_model("Your path here")
     
 def calc_acc(out,y):
     labels=np.argmax(y,axis=1)
@@ -213,7 +209,7 @@ if __name__ == '__main__':
     
     # 用经过参数查找后的模型进行测试
     net=TwoLayerNet()
-    net.load_model('C:/Users/Lenovo/Desktop/资料/研一下/深度学习/HW1/model.npy')
+    net.load_model('Your path here')
     (x_train, t_train), (x_test, t_test) = load_mnist(flatten=True, normalize=False)
     y_test=net.one_hot(t_test)
     out=net.forward(x_test)
