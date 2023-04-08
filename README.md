@@ -15,6 +15,6 @@ net.load_model('Add Your Path') # __main__部分
 最好的参数组合是学习率为0.005，隐藏层大小为300，正则化强度为0.001，分类准确率为97.89%。
 
 关于最后的可视化，得到的结果如下：</br>
-<center>
-  ![Plot]("C:/Users/Lenovo/研一下/深度学习/plot.jpg")
-</center>
+
+ ![Plot](plot.jpg)
+
