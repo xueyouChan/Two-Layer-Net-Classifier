@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr  5 20:18:25 2023
-
-@author: Lenovo
-"""
-
 # coding: utf-8
 try:
     import urllib.request
@@ -26,7 +19,7 @@ key_file = {
 }
 
 #dataset_dir = os.path.dirname(os.path.abspath(__file__))
-dataset_dir = "C:/Users/Lenovo/Desktop/资料/研一下/深度学习/HW1/"  #添加这句代码
+dataset_dir = "Your PATH HERE"  #添加这句代码
 save_file = dataset_dir + "/mnist.pkl"
 
 train_num = 60000
