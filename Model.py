@@ -216,5 +216,5 @@ if __name__ == '__main__':
     print(calc_acc(out, y_test)) # 输出分类精度
     
     # 画图
-    net=TwoLayerNet(784,300,10,0.01,10,lr = 0.005,reg = 0.001)
-    train_test(100, 128, 0.005, net, task = 'train')
+    net=TwoLayerNet(784,hidden,10,0.01,10,lr = lr,reg = reg)
+    train_test(100, 128, lr, net, task = 'train')
